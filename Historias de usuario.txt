@@ -1,0 +1,27 @@
+Creación de la interfaz grafica
+
+Historias de usuario
+Product Backlog
+2 Sprint Backlog
+Prioridades de las actividades
+Estimacion de las actividades
+Crear un grafico BurnDown y un grafico BurnUp
+Comprar posit, pizarra blanca, rotuladores
+
+-----------------------------------------------------
+
+El usuario quiere finalizar la jornada y guarda sus datos.
+
+El usuario quiere iniciar la jornada, que implica que se inicia la primera actividad
+
+El usuario quiere cambiar la actividad que esta realizando actualmente.
+
+El usuario evalua su estado de animo para una jornada determinada.
+
+El usuario quiere visualizar el rendimiento en un dia determinado.
+
+El usuario quiere visualizar un historico de su rendimiento
+
+El usuario quiere ver la ayuda (Manual de usuario)
+
+OPCIONAL - Como usuario quiero que la aplicación me avise acústicamente
