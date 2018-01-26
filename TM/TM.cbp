@@ -21,6 +21,7 @@
 					<Add directory="C:/wxWidgets-3.1.0/lib/gcc_dll/mswud" />
 				</ResourceCompiler>
 				<Linker>
+					<Add library="WX_DIR/lib/gcc_dll/msw" />
 					<Add library="libwxmsw31ud_core.a" />
 					<Add library="libwxbase31ud.a" />
 					<Add library="libwxpngd.a" />
@@ -70,6 +71,10 @@
 		<Linker>
 			<Add option="-mthreads" />
 		</Linker>
+		<Unit filename="../../setup.h">
+			<Option compile="1" />
+			<Option link="1" />
+		</Unit>
 		<Unit filename="TMApp.cpp" />
 		<Unit filename="TMApp.h" />
 		<Unit filename="TMMain.cpp" />
