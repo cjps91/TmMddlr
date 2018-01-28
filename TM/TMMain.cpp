@@ -1,13 +1,12 @@
 /***************************************************************
  * Name:      TMMain.cpp
  * Purpose:   Code for Application Frame
- * Author:    iCarlosPro ()
- * Created:   2018-01-26
- * Copyright: iCarlosPro ()
+ * Author:    iCarlos ()
+ * Created:   2018-01-27
+ * Copyright: iCarlos ()
  * License:
  **************************************************************/
 
-#include "wx_pch.h"
 #include "TMMain.h"
 #include <wx/msgdlg.h>
 
@@ -43,7 +42,7 @@ wxString wxbuildinfo(wxbuildinfoformat format)
 }
 
 //(*IdInit(TMFrame)
-const long TMFrame::idMenuQuit = wxNewId();
+const long TMFrame::ID_MENUITEM1 = wxNewId();
 const long TMFrame::idMenuAbout = wxNewId();
 const long TMFrame::ID_STATUSBAR1 = wxNewId();
 //*)
@@ -62,10 +61,12 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     wxMenuItem* MenuItem1;
     wxMenuItem* MenuItem2;
 
-    Create(parent, id, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("id"));
+    Create(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
+    SetMinSize(wxSize(640,480));
+    SetFocus();
     MenuBar1 = new wxMenuBar();
     Menu1 = new wxMenu();
-    MenuItem1 = new wxMenuItem(Menu1, idMenuQuit, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);
+    MenuItem1 = new wxMenuItem(Menu1, ID_MENUITEM1, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);
     Menu1->Append(MenuItem1);
     MenuBar1->Append(Menu1, _("&File"));
     Menu2 = new wxMenu();
@@ -79,8 +80,9 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);
     StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
     SetStatusBar(StatusBar1);
+    Center();
 
-    Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnQuit);
+    Connect(ID_MENUITEM1,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnAbout);
     //*)
 }
@@ -101,3 +103,4 @@ void TMFrame::OnAbout(wxCommandEvent& event)
     wxString msg = wxbuildinfo(long_f);
     wxMessageBox(msg, _("Welcome to..."));
 }
+

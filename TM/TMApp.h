@@ -1,9 +1,9 @@
 /***************************************************************
  * Name:      TMApp.h
  * Purpose:   Defines Application Class
- * Author:    iCarlosPro ()
- * Created:   2018-01-26
- * Copyright: iCarlosPro ()
+ * Author:    iCarlos ()
+ * Created:   2018-01-27
+ * Copyright: iCarlos ()
  * License:
  **************************************************************/
 

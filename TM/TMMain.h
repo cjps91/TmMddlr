@@ -1,9 +1,9 @@
 /***************************************************************
  * Name:      TMMain.h
  * Purpose:   Defines Application Frame
- * Author:    iCarlosPro ()
- * Created:   2018-01-26
- * Copyright: iCarlosPro ()
+ * Author:    iCarlos ()
+ * Created:   2018-01-27
+ * Copyright: iCarlos ()
  * License:
  **************************************************************/
 
@@ -31,7 +31,7 @@ class TMFrame: public wxFrame
         //*)
 
         //(*Identifiers(TMFrame)
-        static const long idMenuQuit;
+        static const long ID_MENUITEM1;
         static const long idMenuAbout;
         static const long ID_STATUSBAR1;
         //*)

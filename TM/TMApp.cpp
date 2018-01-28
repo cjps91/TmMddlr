@@ -1,13 +1,12 @@
 /***************************************************************
  * Name:      TMApp.cpp
  * Purpose:   Code for Application Class
- * Author:    iCarlosPro ()
- * Created:   2018-01-26
- * Copyright: iCarlosPro ()
+ * Author:    iCarlos ()
+ * Created:   2018-01-27
+ * Copyright: iCarlos ()
  * License:
  **************************************************************/
 
-#include "wx_pch.h"
 #include "TMApp.h"
 
 //(*AppHeaders
