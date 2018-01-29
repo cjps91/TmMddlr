@@ -12,6 +12,7 @@
 
 //(*InternalHeaders(TMFrame)
 #include <wx/intl.h>
+#include <wx/settings.h>
 #include <wx/string.h>
 //*)
 
@@ -42,6 +43,11 @@ wxString wxbuildinfo(wxbuildinfoformat format)
 }
 
 //(*IdInit(TMFrame)
+const long TMFrame::ID_BUTTON1 = wxNewId();
+const long TMFrame::ID_BUTTON2 = wxNewId();
+const long TMFrame::ID_BUTTON3 = wxNewId();
+const long TMFrame::ID_BUTTON4 = wxNewId();
+const long TMFrame::ID_BUTTON5 = wxNewId();
 const long TMFrame::ID_MENUITEM1 = wxNewId();
 const long TMFrame::idMenuAbout = wxNewId();
 const long TMFrame::ID_STATUSBAR1 = wxNewId();
@@ -55,6 +61,7 @@ END_EVENT_TABLE()
 TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
 {
     //(*Initialize(TMFrame)
+    wxGridSizer* GridSizer1;
     wxMenu* Menu1;
     wxMenu* Menu2;
     wxMenuBar* MenuBar1;
@@ -64,6 +71,19 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     Create(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
     SetMinSize(wxSize(640,480));
     SetFocus();
+    SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_BTNFACE));
+    GridSizer1 = new wxGridSizer(3, 3, 0, 0);
+    Button1 = new wxButton(this, ID_BUTTON1, _("Trabajo"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
+    GridSizer1->Add(Button1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    Button2 = new wxButton(this, ID_BUTTON2, _("Descanso"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON2"));
+    GridSizer1->Add(Button2, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    Button3 = new wxButton(this, ID_BUTTON3, _("Procrast"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON3"));
+    GridSizer1->Add(Button3, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    Button4 = new wxButton(this, ID_BUTTON4, _("STOP"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON4"));
+    GridSizer1->Add(Button4, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    Button5 = new wxButton(this, ID_BUTTON5, _("Visualizador"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON5"));
+    GridSizer1->Add(Button5, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    SetSizer(GridSizer1);
     MenuBar1 = new wxMenuBar();
     Menu1 = new wxMenu();
     MenuItem1 = new wxMenuItem(Menu1, ID_MENUITEM1, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);
@@ -80,8 +100,11 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);
     StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
     SetStatusBar(StatusBar1);
+    GridSizer1->Fit(this);
+    GridSizer1->SetSizeHints(this);
     Center();
 
+    Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnButton1Click);
     Connect(ID_MENUITEM1,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnAbout);
     //*)
@@ -104,3 +127,7 @@ void TMFrame::OnAbout(wxCommandEvent& event)
     wxMessageBox(msg, _("Welcome to..."));
 }
 
+
+void TMFrame::OnButton1Click(wxCommandEvent& event)
+{
+}
