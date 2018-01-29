@@ -66,14 +66,14 @@
 	"wx/msw/winundef.h"
 	"wx/features.h"
 
-1516964830 c:\wxwidgets-3.1.0\include\wx\platform.h
+1516964814 c:\wxwidgets-3.1.0\include\wx\platform.h
 	<unistd.h>
 	<TargetConditionals.h>
 	<AvailabilityMacros.h>
 	"wx/osx/config_xcode.h"
 	"wx/android/config_android.h"
 	"wx/compiler.h"
-	"setup.h"
+	"wx/setup.h"
 	"wx/msw/libraries.h"
 	"wx/msw/gccpriv.h"
 	<TargetConditionals.h>
@@ -86,7 +86,7 @@
 
 1456695216 c:\wxwidgets-3.1.0\include\wx\compiler.h
 
-1456695218 c:\wxwidgets-3.1.0\lib\gcc_dll\mswu\wx\setup.h
+1456695216 c:\wxwidgets-3.1.0\lib\gcc_dll\mswu\wx\setup.h
 
 1456695216 c:\wxwidgets-3.1.0\include\wx\msw\libraries.h
 
@@ -2397,25 +2397,24 @@
 	<wx/statbmp.h>
 	<wx/statusbr.h>
 
-1517219989 source:c:\tm\tmmddlr\tm\resource.rc
+1517070316 source:c:\users\alex\desktop\tmmddlr\tm\resource.rc
 	"wx/msw/wx.rc"
 
-1517219989 source:c:\tm\tmmddlr\tm\tmapp.cpp
+1517070316 source:c:\users\alex\desktop\tmmddlr\tm\tmapp.cpp
 	"TMApp.h"
 	"TMMain.h"
 	<wx/image.h>
 
-1517219989 c:\tm\tmmddlr\tm\tmapp.h
+1517070316 c:\users\alex\desktop\tmmddlr\tm\tmapp.h
 	<wx/app.h>
 
-1517220891 c:\tm\tmmddlr\tm\tmmain.h
+1517223849 c:\users\alex\desktop\tmmddlr\tm\tmmain.h
 	<wx/button.h>
 	<wx/frame.h>
 	<wx/menu.h>
-	<wx/sizer.h>
 	<wx/statusbr.h>
 
-1517219989 source:c:\tm\tmmddlr\tm\tmmain.cpp
+1517224026 source:c:\users\alex\desktop\tmmddlr\tm\tmmain.cpp
 	"TMMain.h"
 	<wx/msgdlg.h>
 	<wx/intl.h>
@@ -2445,8 +2444,4 @@
 1456695216 c:\wxwidgets-3.1.0\include\wx\qt\msgdlg.h
 	"wx/msgdlg.h"
 	<QtWidgets/QMessageBox>
-
-1456695216 c:\wxwidgets-3.1.0\include\wx\sizer.h
-	"wx/defs.h"
-	"wx/window.h"
 
