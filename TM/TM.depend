@@ -2397,24 +2397,24 @@
 	<wx/statbmp.h>
 	<wx/statusbr.h>
 
-1517070316 source:c:\users\alex\desktop\tmmddlr\tm\resource.rc
+1517225127 source:c:\users\alex\desktop\tmmddlr\tm\resource.rc
 	"wx/msw/wx.rc"
 
-1517070316 source:c:\users\alex\desktop\tmmddlr\tm\tmapp.cpp
+1517225127 source:c:\users\alex\desktop\tmmddlr\tm\tmapp.cpp
 	"TMApp.h"
 	"TMMain.h"
 	<wx/image.h>
 
-1517070316 c:\users\alex\desktop\tmmddlr\tm\tmapp.h
+1517225127 c:\users\alex\desktop\tmmddlr\tm\tmapp.h
 	<wx/app.h>
 
-1517223849 c:\users\alex\desktop\tmmddlr\tm\tmmain.h
+1517225127 c:\users\alex\desktop\tmmddlr\tm\tmmain.h
 	<wx/button.h>
 	<wx/frame.h>
 	<wx/menu.h>
 	<wx/statusbr.h>
 
-1517224026 source:c:\users\alex\desktop\tmmddlr\tm\tmmain.cpp
+1517225127 source:c:\users\alex\desktop\tmmddlr\tm\tmmain.cpp
 	"TMMain.h"
 	<wx/msgdlg.h>
 	<wx/intl.h>
