@@ -11,6 +11,7 @@
 #define TMAPP_H
 
 #include <wx/app.h>
+#include "setup.h"
 
 class TMApp : public wxApp
 {

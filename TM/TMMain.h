@@ -17,6 +17,7 @@
 #include <wx/sizer.h>
 #include <wx/statusbr.h>
 //*)
+#include "setup.h"
 
 class TMFrame: public wxFrame
 {
