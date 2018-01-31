@@ -44,6 +44,8 @@ wxString wxbuildinfo(wxbuildinfoformat format)
 //(*IdInit(TMFrame)
 const long TMFrame::ID_BUTTON1 = wxNewId();
 const long TMFrame::ID_BUTTON2 = wxNewId();
+const long TMFrame::ID_BUTTON3 = wxNewId();
+const long TMFrame::ID_BUTTON4 = wxNewId();
 const long TMFrame::ID_MENUITEM1 = wxNewId();
 const long TMFrame::idMenuAbout = wxNewId();
 const long TMFrame::ID_STATUSBAR1 = wxNewId();
@@ -68,6 +70,8 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     SetFocus();
     Button1 = new wxButton(this, ID_BUTTON1, _("Label"), wxPoint(8,-136), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
     Button2 = new wxButton(this, ID_BUTTON2, _("Label"), wxPoint(80,40), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON2"));
+    Button3 = new wxButton(this, ID_BUTTON3, _("Label"), wxPoint(384,96), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON3"));
+    Button4 = new wxButton(this, ID_BUTTON4, _("Label"), wxPoint(88,192), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON4"));
     MenuBar1 = new wxMenuBar();
     Menu1 = new wxMenu();
     MenuItem1 = new wxMenuItem(Menu1, ID_MENUITEM1, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);

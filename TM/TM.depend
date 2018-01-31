@@ -66,7 +66,7 @@
 	"wx/msw/winundef.h"
 	"wx/features.h"
 
-1516964814 c:\wxwidgets-3.1.0\include\wx\platform.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\platform.h
 	<unistd.h>
 	<TargetConditionals.h>
 	<AvailabilityMacros.h>
@@ -2444,4 +2444,27 @@
 1456695216 c:\wxwidgets-3.1.0\include\wx\qt\msgdlg.h
 	"wx/msgdlg.h"
 	<QtWidgets/QMessageBox>
+
+1517070316 source:c:\tm\tmmddlr\tm\resource.rc
+	"wx/msw/wx.rc"
+
+1517070316 source:c:\tm\tmmddlr\tm\tmapp.cpp
+	"TMApp.h"
+	"TMMain.h"
+	<wx/image.h>
+
+1517070316 c:\tm\tmmddlr\tm\tmapp.h
+	<wx/app.h>
+
+1517392662 c:\tm\tmmddlr\tm\tmmain.h
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/menu.h>
+	<wx/statusbr.h>
+
+1517392662 source:c:\tm\tmmddlr\tm\tmmain.cpp
+	"TMMain.h"
+	<wx/msgdlg.h>
+	<wx/intl.h>
+	<wx/string.h>
 

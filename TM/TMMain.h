@@ -36,6 +36,8 @@ class TMFrame: public wxFrame
         //(*Identifiers(TMFrame)
         static const long ID_BUTTON1;
         static const long ID_BUTTON2;
+        static const long ID_BUTTON3;
+        static const long ID_BUTTON4;
         static const long ID_MENUITEM1;
         static const long idMenuAbout;
         static const long ID_STATUSBAR1;
@@ -44,6 +46,8 @@ class TMFrame: public wxFrame
         //(*Declarations(TMFrame)
         wxButton* Button1;
         wxButton* Button2;
+        wxButton* Button3;
+        wxButton* Button4;
         wxStatusBar* StatusBar1;
         //*)
 
