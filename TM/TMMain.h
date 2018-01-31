@@ -31,6 +31,7 @@ class TMFrame: public wxFrame
         void OnAbout(wxCommandEvent& event);
         void OnButton1Click(wxCommandEvent& event);
         void OnButton2Click(wxCommandEvent& event);
+        void OnButton5Click(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(TMFrame)
@@ -38,8 +39,10 @@ class TMFrame: public wxFrame
         static const long ID_BUTTON2;
         static const long ID_BUTTON3;
         static const long ID_BUTTON4;
+        static const long ID_BUTTON5;
+        static const long ID_BUTTON6;
         static const long ID_MENUITEM1;
-        static const long idMenuAbout;
+        static const long Acercade;
         static const long ID_STATUSBAR1;
         //*)
 
@@ -48,6 +51,9 @@ class TMFrame: public wxFrame
         wxButton* Button2;
         wxButton* Button3;
         wxButton* Button4;
+        wxButton* Button5;
+        wxButton* Button6;
+        wxMenuItem* MenuItem2;
         wxStatusBar* StatusBar1;
         //*)
 
