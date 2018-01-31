@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
 	<object class="wxFrame" name="TMFrame">
+		<title>TimeMeddler</title>
 		<centered>1</centered>
+		<size>350,250</size>
 		<focused>1</focused>
-		<minsize>640,480</minsize>
+		<fg>wxSYS_COLOUR_ACTIVEBORDER</fg>
+		<bg>wxSYS_COLOUR_WINDOW</bg>
+		<minsize>350,250</minsize>
 		<id_arg>0</id_arg>
 		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
 			<label>Label</label>
@@ -11,17 +15,66 @@
 			<handler function="OnButton1Click" entry="EVT_BUTTON" />
 		</object>
 		<object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
-			<label>Label</label>
-			<pos>80,40</pos>
+			<label>Trabajo</label>
+			<pos>136,72</pos>
+			<size>75,50</size>
+			<bg>#00FF00</bg>
+			<font>
+				<size>16</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Gill Sans MT Condensed</face>
+			</font>
 			<handler function="OnButton2Click" entry="EVT_BUTTON" />
 		</object>
 		<object class="wxButton" name="ID_BUTTON3" variable="Button3" member="yes">
-			<label>Label</label>
-			<pos>384,96</pos>
+			<label>Procrastinación</label>
+			<pos>208,128</pos>
+			<size>100,50</size>
+			<bg>#FFFF00</bg>
+			<font>
+				<size>16</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Gill Sans MT Condensed</face>
+			</font>
 		</object>
 		<object class="wxButton" name="ID_BUTTON4" variable="Button4" member="yes">
-			<label>Label</label>
-			<pos>88,192</pos>
+			<label>Descanso</label>
+			<pos>72,128</pos>
+			<size>70,50</size>
+			<bg>#0080FF</bg>
+			<font>
+				<size>16</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Gill Sans MT Condensed</face>
+			</font>
+		</object>
+		<object class="wxButton" name="ID_BUTTON5" variable="Button5" member="yes">
+			<label>STOP</label>
+			<pos>144,16</pos>
+			<size>60,50</size>
+			<bg>#FF0000</bg>
+			<font>
+				<size>16</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Gill Sans MT Condensed</face>
+			</font>
+			<handler function="OnButton5Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON6" variable="Button6" member="yes">
+			<label>Visualizador</label>
+			<pos>256,16</pos>
 		</object>
 		<object class="wxMenuBar" variable="MenuBar1" member="no">
 			<object class="wxMenu" variable="Menu1" member="no">
@@ -35,11 +88,10 @@
 			</object>
 			<object class="wxMenu" variable="Menu2" member="no">
 				<label>Help</label>
-				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
-					<label>About</label>
-					<accel>F1</accel>
-					<help>Show info about this application</help>
-					<handler function="OnAbout" entry="EVT_MENU" />
+				<object class="wxMenuItem" name="Acercade" variable="MenuItem2" member="yes">
+					<label>Acercade1</label>
+					<accel>Alt-?</accel>
+					<help>Menu de acerca de</help>
 				</object>
 			</object>
 		</object>
