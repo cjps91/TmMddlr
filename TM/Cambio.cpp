@@ -10,15 +10,15 @@ Cambio::~Cambio()
     //dtor
 }
 
-actividad Cambio::cambiarActividad(actividad vieja, int tipo) {
-    /* Quiero cambiar de actividad, entonces
-    /* 1. asignamos fecha_fin a actividad actual
-    /* 2. creamos actividad nueva asignandole fecha_ini y tipo.*/
-
-    time(&vieja.fecha_fin);
-    actividad nueva;
+void Cambio::iniciarActividad(vector<actividad> &actividades){
+	actividad nueva;
+	nueva.nombre = "Actividad "+actividades.size()+1;
     time(&nueva.fecha_ini);
     nueva.tipo = tipo;
+	actividades.push_back(nueva);
+}
 
-    return nueva;
+void Cambio::cambiarActividad(vector<actividad> &actividades, int tipo) {	
+    time(&actividades[actividades.size()-1].fecha_fin);
+	iniciarActividad();
 }

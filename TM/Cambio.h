@@ -13,7 +13,8 @@ class Cambio
     public:
         Cambio();
         virtual ~Cambio();
-        cambiarActividad(int tipo);
+        actividad cambiarActividad(vector<actividad> &actividades, int tipo);
+		actividad iniciarActividad(vector<actividad> &actividades);
 
     protected:
 
