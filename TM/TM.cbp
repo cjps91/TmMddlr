@@ -22,7 +22,6 @@
 				<Linker>
 					<Add option="-s" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxbase31u.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxbase31u.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxbase31u_net.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxbase31u_xml.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxexpat.a" />
@@ -64,6 +63,10 @@
 		<Linker>
 			<Add option="-mthreads" />
 		</Linker>
+		<Unit filename="ActivityHandler.cpp" />
+		<Unit filename="ActivityHandler.h" />
+		<Unit filename="FileHandler.cpp" />
+		<Unit filename="FileHandler.h" />
 		<Unit filename="TMApp.cpp" />
 		<Unit filename="TMApp.h" />
 		<Unit filename="TMMain.cpp" />
