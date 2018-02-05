@@ -15,6 +15,7 @@ struct actividad{
     time_t fecha_ini;
     time_t fecha_fin;
     int tipo;
+    const char *nombre;
 };
 
 class FileHandler{
