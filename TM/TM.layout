@@ -2,6 +2,8 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
+<<<<<<< HEAD
+=======
 	<File name="TMMain.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1343" topLine="36" />
@@ -17,4 +19,5 @@
 			<Cursor1 position="326" topLine="6" />
 		</Cursor>
 	</File>
+>>>>>>> 2404ed13a78c984a7a1a918a304dc78a1b54e7af
 </CodeBlocks_layout_file>
