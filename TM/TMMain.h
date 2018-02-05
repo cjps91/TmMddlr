@@ -19,12 +19,18 @@
 
 class TMFrame: public wxFrame
 {
+
+
     public:
 
         TMFrame(wxWindow* parent,wxWindowID id = -1);
         virtual ~TMFrame();
 
     private:
+
+        vector<actividad> *actividades;
+        FileHandler *fh;
+        ActivityHandler *ah;
 
         //(*Handlers(TMFrame)
         void OnQuit(wxCommandEvent& event);

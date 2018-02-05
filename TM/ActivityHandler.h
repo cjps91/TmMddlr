@@ -6,14 +6,15 @@
 class ActivityHandler
 {
     public:
-        ActivityHandler();
+        ActivityHandler(vector<actividad> &actividades);
         virtual ~ActivityHandler();
-        void cambiarActividad(vector<actividad> &actividades, int tipo);
-		void iniciarActividad(vector<actividad> &actividades, int tipo);
+        void cambiarActividad(int tipo);
+		void iniciarActividad(int tipo);
 
     protected:
 
     private:
+        vector<actividad> *actividades;
 };
 
 #endif // CAMBIO_H

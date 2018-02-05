@@ -61,6 +61,10 @@ END_EVENT_TABLE()
 
 TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
 {
+
+    fh = new FileHandler(this.actividades);
+    ah = new ActivityHandler(this.actividades);
+
     //(*Initialize(TMFrame)
     wxMenu* Menu1;
     wxMenu* Menu2;
@@ -112,6 +116,8 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     Connect(ID_BUTTON5,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnButton5Click);
     Connect(ID_MENUITEM1,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnQuit);
     //*)
+
+
 }
 
 TMFrame::~TMFrame()
