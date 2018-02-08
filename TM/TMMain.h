@@ -15,9 +15,10 @@
 #include <wx/frame.h>
 #include <wx/menu.h>
 #include <wx/statusbr.h>
-#include "ActivityHandler.h"
-#include "FileHandler.h"
 //*)
+
+#include "FileHandler.h"
+#include "ActivityHandler.h"
 
 class TMFrame: public wxFrame
 {
@@ -35,9 +36,6 @@ class TMFrame: public wxFrame
         //(*Handlers(TMFrame)
         void OnQuit(wxCommandEvent& event);
         void OnAbout(wxCommandEvent& event);
-        void OnButton1Click(wxCommandEvent& event);
-        void OnButton2Click(wxCommandEvent& event);
-        void OnButton5Click(wxCommandEvent& event);
         void OnBotonProcrastClick(wxCommandEvent& event);
         void OnBotonDescansoClick(wxCommandEvent& event);
         void OnBotonVisualizadorClick(wxCommandEvent& event);

@@ -1876,7 +1876,7 @@
 	"wx/osx/combobox.h"
 	"wx/qt/combobox.h"
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\textctrl.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\textctrl.h
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/textentry.h"
@@ -1892,7 +1892,7 @@
 	"wx/osx/textctrl.h"
 	"wx/qt/textctrl.h"
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\textentry.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\textentry.h
 	"wx/filefn.h"
 	"wx/gdicmn.h"
 	"wx/gtk/textentry.h"
@@ -1906,13 +1906,13 @@
 1456695218 c:\wxwidgets-3.1.0\include\wx\osx\textentry.h
 	"wx/control.h"
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\msw\textentry.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\msw\textentry.h
 
 1456695218 c:\wxwidgets-3.1.0\include\wx\motif\textentry.h
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\qt\textentry.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\qt\textentry.h
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\ioswrap.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\ioswrap.h
 	"wx/beforestd.h"
 	<iostream.h>
 	<iostream>
@@ -1924,11 +1924,11 @@
 	"wx/scrolwin.h"
 	"wx/arrstr.h"
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\univ\textctrl.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\univ\textctrl.h
 	"wx/scrolwin.h"
 	"wx/univ/inphand.h"
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\scrolwin.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\scrolwin.h
 	"wx/panel.h"
 	"wx/gtk/scrolwin.h"
 	"wx/gtk1/scrolwin.h"
@@ -1952,13 +1952,13 @@
 
 1456695218 c:\wxwidgets-3.1.0\include\wx\gtk1\scrolwin.h
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\generic\scrolwin.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\generic\scrolwin.h
 	"wx/recguard.h"
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\recguard.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\recguard.h
 	"wx/defs.h"
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\msw\textctrl.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\msw\textctrl.h
 
 1456695218 c:\wxwidgets-3.1.0\include\wx\motif\textctrl.h
 
@@ -1970,7 +1970,7 @@
 	"wx/control.h"
 	"wx/textctrl.h"
 
-1456695218 c:\wxwidgets-3.1.0\include\wx\qt\textctrl.h
+1456695216 c:\wxwidgets-3.1.0\include\wx\qt\textctrl.h
 	<QtWidgets/QLineEdit>
 	<QtWidgets/QTextEdit>
 
@@ -2387,13 +2387,15 @@
 1518049941 c:\users\hannibal\desktop\proyectos\tmmddlr\tm\tmapp.h
 	<wx/app.h>
 
-1518053621 c:\users\hannibal\desktop\proyectos\tmmddlr\tm\tmmain.h
+1518091253 c:\users\hannibal\desktop\proyectos\tmmddlr\tm\tmmain.h
 	<wx/button.h>
 	<wx/frame.h>
 	<wx/menu.h>
+	<wx/msgdlg.h>
 	<wx/statusbr.h>
-	"ActivityHandler.h"
+	<wx/textdlg.h>
 	"FileHandler.h"
+	"ActivityHandler.h"
 
 1517225127 source:c:\users\alex\desktop\tmmddlr\tm\resource.rc
 	"wx/msw/wx.rc"
@@ -2493,10 +2495,10 @@
 	<vector>
 	<iostream>
 
-1518054097 source:c:\users\hannibal\desktop\proyectos\tmmddlr\tm\activityhandler.cpp
+1518089154 source:c:\users\hannibal\desktop\proyectos\tmmddlr\tm\activityhandler.cpp
 	"ActivityHandler.h"
 
-1518054085 c:\users\hannibal\desktop\proyectos\tmmddlr\tm\activityhandler.h
+1518089123 c:\users\hannibal\desktop\proyectos\tmmddlr\tm\activityhandler.h
 	<time.h>
 	"FileHandler.h"
 
@@ -2517,4 +2519,17 @@
 	"FileHandler.h"
 	<time.h>
 	<stdio.h>
+
+1456695216 c:\wxwidgets-3.1.0\include\wx\textdlg.h
+	"wx/generic/textdlgg.h"
+
+1456695216 c:\wxwidgets-3.1.0\include\wx\generic\textdlgg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+	"wx/valtext.h"
+	"wx/textctrl.h"
+
+1456695216 c:\wxwidgets-3.1.0\include\wx\valtext.h
+	"wx/defs.h"
+	"wx/validate.h"
 

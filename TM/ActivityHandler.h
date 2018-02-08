@@ -9,8 +9,8 @@ class ActivityHandler
         vector<actividad> actividades;
 
     public:
-        ActivityHandler(vector<actividad> &actividades){this->actividades = actividades;}
-        virtual ~ActivityHandler();
+        ActivityHandler(vector<actividad> &actividades);
+        ~ActivityHandler();
         void cambiarActividad(int tipo);
 		void iniciarActividad(int tipo);
 		time_t tiempoTipo(int tipo);

@@ -1,5 +1,14 @@
 #include "ActivityHandler.h"
 
+ActivityHandler::ActivityHandler(vector<actividad> &actividades){
+
+    this->actividades = actividades;
+
+}
+
+ActivityHandler::~ActivityHandler(){
+    //Destructor
+}
 
 void ActivityHandler::iniciarActividad(int tipo){
 	actividad nueva;
