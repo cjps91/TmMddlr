@@ -20,11 +20,13 @@ struct actividad{
 
 class FileHandler{
 
+    vector<actividad> actividades;
+
 	private:
 	protected:
 	public:
 
-		FileHandler();
+		FileHandler(vector <actividad> &vector_actividades){ this->actividades = vector_actividades; }
 		~FileHandler();
 		bool LeerFichero(vector <actividad> &vector_actividades, const char* nombre_archivo);
 		bool EscribirFichero(vector <actividad> vector_actividades, const char* nombre_archivo);

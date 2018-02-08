@@ -22,7 +22,7 @@
 				<family>swiss</family>
 				<face>Gill Sans MT Condensed</face>
 			</font>
-			<handler function="OnButton2Click" entry="EVT_BUTTON" />
+			<handler function="OnBotonTrabajoClick" entry="EVT_BUTTON" />
 		</object>
 		<object class="wxButton" name="ID_BUTTON3" variable="BotonProcrast" member="yes">
 			<label>Procrastinación</label>
@@ -37,6 +37,7 @@
 				<family>swiss</family>
 				<face>Gill Sans MT Condensed</face>
 			</font>
+			<handler function="OnBotonProcrastClick" entry="EVT_BUTTON" />
 		</object>
 		<object class="wxButton" name="ID_BUTTON4" variable="BotonDescanso" member="yes">
 			<label>Descanso</label>
@@ -51,6 +52,7 @@
 				<family>swiss</family>
 				<face>Gill Sans MT Condensed</face>
 			</font>
+			<handler function="OnBotonDescansoClick" entry="EVT_BUTTON" />
 		</object>
 		<object class="wxButton" name="ID_BUTTON5" variable="BotonStop" member="yes">
 			<label>STOP</label>
@@ -70,6 +72,7 @@
 		<object class="wxButton" name="ID_BUTTON6" variable="BotonVisualizador" member="yes">
 			<label>Visualizador</label>
 			<pos>256,16</pos>
+			<handler function="OnBotonVisualizadorClick" entry="EVT_BUTTON" />
 		</object>
 		<object class="wxMenuBar" variable="MenuBar1" member="no">
 			<object class="wxMenu" variable="Menu1" member="no">

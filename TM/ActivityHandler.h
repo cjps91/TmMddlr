@@ -5,16 +5,18 @@
 
 class ActivityHandler
 {
+    private:
+        vector<actividad> actividades;
+
     public:
-        ActivityHandler(vector<actividad> &actividades);
+        ActivityHandler(vector<actividad> &actividades){this->actividades = actividades;}
         virtual ~ActivityHandler();
         void cambiarActividad(int tipo);
 		void iniciarActividad(int tipo);
+		time_t tiempoTipo(int tipo);
+        time_t tiempoTotal();
+        float porcentajeActividad(int tipo);
 
-    protected:
-
-    private:
-        vector<actividad> *actividades;
 };
 
 #endif // CAMBIO_H

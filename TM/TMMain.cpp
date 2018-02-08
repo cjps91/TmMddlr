@@ -62,8 +62,8 @@ END_EVENT_TABLE()
 TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
 {
 
-    fh = new FileHandler(this.actividades);
-    ah = new ActivityHandler(this.actividades);
+    fh = new FileHandler(this->actividades);
+    ah = new ActivityHandler(this->actividades);
 
     //(*Initialize(TMFrame)
     wxMenu* Menu1;
@@ -112,8 +112,11 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     SetStatusBar(StatusBar1);
     Center();
 
-    Connect(ID_BUTTON2,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnButton2Click);
+    Connect(ID_BUTTON2,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnBotonTrabajoClick);
+    Connect(ID_BUTTON3,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnBotonProcrastClick);
+    Connect(ID_BUTTON4,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnBotonDescansoClick);
     Connect(ID_BUTTON5,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnButton5Click);
+    Connect(ID_BUTTON6,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnBotonVisualizadorClick);
     Connect(ID_MENUITEM1,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnQuit);
     //*)
 
@@ -137,15 +140,22 @@ void TMFrame::OnAbout(wxCommandEvent& event)
     wxMessageBox(msg, _("Welcome to..."));
 }
 
-
-void TMFrame::OnButton1Click(wxCommandEvent& event)
+void TMFrame::OnBotonProcrastClick(wxCommandEvent& event)
 {
+
 }
 
-void TMFrame::OnButton2Click(wxCommandEvent& event)
+void TMFrame::OnBotonDescansoClick(wxCommandEvent& event)
 {
+
 }
 
-void TMFrame::OnButton5Click(wxCommandEvent& event)
+void TMFrame::OnBotonVisualizadorClick(wxCommandEvent& event)
 {
+
+}
+
+void TMFrame::OnBotonTrabajoClick(wxCommandEvent& event)
+{
+
 }

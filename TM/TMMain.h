@@ -15,12 +15,12 @@
 #include <wx/frame.h>
 #include <wx/menu.h>
 #include <wx/statusbr.h>
+#include "ActivityHandler.h"
+#include "FileHandler.h"
 //*)
 
 class TMFrame: public wxFrame
 {
-
-
     public:
 
         TMFrame(wxWindow* parent,wxWindowID id = -1);
@@ -28,7 +28,7 @@ class TMFrame: public wxFrame
 
     private:
 
-        vector<actividad> *actividades;
+        vector<actividad> actividades;
         FileHandler *fh;
         ActivityHandler *ah;
 
@@ -38,6 +38,10 @@ class TMFrame: public wxFrame
         void OnButton1Click(wxCommandEvent& event);
         void OnButton2Click(wxCommandEvent& event);
         void OnButton5Click(wxCommandEvent& event);
+        void OnBotonProcrastClick(wxCommandEvent& event);
+        void OnBotonDescansoClick(wxCommandEvent& event);
+        void OnBotonVisualizadorClick(wxCommandEvent& event);
+        void OnBotonTrabajoClick(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(TMFrame)
