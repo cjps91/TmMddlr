@@ -66,7 +66,7 @@
 	"wx/msw/winundef.h"
 	"wx/features.h"
 
-1456695216 c:\wxwidgets-3.1.0\include\wx\platform.h
+1516964814 c:\wxwidgets-3.1.0\include\wx\platform.h
 	<unistd.h>
 	<TargetConditionals.h>
 	<AvailabilityMacros.h>
@@ -86,7 +86,7 @@
 
 1456695216 c:\wxwidgets-3.1.0\include\wx\compiler.h
 
-1456763563 c:\wxwidgets-3.1.0\lib\gcc_dll\mswu\wx\setup.h
+1456695216 c:\wxwidgets-3.1.0\lib\gcc_dll\mswu\wx\setup.h
 
 1456695216 c:\wxwidgets-3.1.0\include\wx\msw\libraries.h
 
@@ -2397,27 +2397,31 @@
 	"FileHandler.h"
 	"ActivityHandler.h"
 
-1517225127 source:c:\users\alex\desktop\tmmddlr\tm\resource.rc
+1519662965 source:c:\users\alex\desktop\tmmddlr\tm\resource.rc
 	"wx/msw/wx.rc"
 
-1517225127 source:c:\users\alex\desktop\tmmddlr\tm\tmapp.cpp
+1519662965 source:c:\users\alex\desktop\tmmddlr\tm\tmapp.cpp
 	"TMApp.h"
 	"TMMain.h"
 	<wx/image.h>
 
-1517225127 c:\users\alex\desktop\tmmddlr\tm\tmapp.h
+1519662965 c:\users\alex\desktop\tmmddlr\tm\tmapp.h
 	<wx/app.h>
 
-1517225127 c:\users\alex\desktop\tmmddlr\tm\tmmain.h
+1519662965 c:\users\alex\desktop\tmmddlr\tm\tmmain.h
 	<wx/button.h>
 	<wx/frame.h>
 	<wx/menu.h>
 	<wx/statusbr.h>
+	"FileHandler.h"
+	"ActivityHandler.h"
 
-1517225127 source:c:\users\alex\desktop\tmmddlr\tm\tmmain.cpp
+1519665303 source:c:\users\alex\desktop\tmmddlr\tm\tmmain.cpp
 	"TMMain.h"
 	<wx/msgdlg.h>
+	<wx/font.h>
 	<wx/intl.h>
+	<wx/settings.h>
 	<wx/string.h>
 
 1456695216 c:\wxwidgets-3.1.0\include\wx\msgdlg.h
@@ -2532,4 +2536,22 @@
 1456695216 c:\wxwidgets-3.1.0\include\wx\valtext.h
 	"wx/defs.h"
 	"wx/validate.h"
+
+1519662965 source:c:\users\alex\desktop\tmmddlr\tm\activityhandler.cpp
+	"ActivityHandler.h"
+
+1519662965 c:\users\alex\desktop\tmmddlr\tm\activityhandler.h
+	<time.h>
+	"FileHandler.h"
+
+1519662965 c:\users\alex\desktop\tmmddlr\tm\filehandler.h
+	<time.h>
+	<string>
+	<vector>
+	<iostream>
+
+1519662965 source:c:\users\alex\desktop\tmmddlr\tm\filehandler.cpp
+	"FileHandler.h"
+	<time.h>
+	<stdio.h>
 
