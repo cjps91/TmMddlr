@@ -1,4 +1,4 @@
-#TIMEMEDDLER
+# TIMEMEDDLER
 
 **TimeMeddler** es un proyecto cuya finalidad es desarrollar una sencilla herramienta para
 controlar el tiempo de trabajo, descanso y procrastinación.
