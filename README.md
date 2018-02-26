@@ -1,9 +1,14 @@
+#TIMEMEDDLER
+
 **TimeMeddler** es un proyecto cuya finalidad es desarrollar una sencilla herramienta para
 controlar el tiempo de trabajo, descanso y procrastinación.
 Se definen 3 estados posibles:
+
 **Trabajo:** El usuario está desarrollando una actividad productiva relacionada con su
 profesión.
+
 **Descanso:** El usuario no desarrolla actividad alguna.
+
 **Procrastinación:** El usuario desarrolla actividades no productivas en horario que se
 supone de trabajo.
 
