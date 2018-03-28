@@ -7,6 +7,8 @@
 
 #include <time.h>
 #include <string>
+#include <stdio.h>
+#include <stdlib.h>
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -15,7 +17,7 @@ struct actividad{
     time_t fecha_ini;
     time_t fecha_fin;
     int tipo;
-    const char *nombre;
+    char *nombre;
 };
 
 class FileHandler{

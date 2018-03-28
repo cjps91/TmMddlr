@@ -2,6 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
+FileHandler::~FileHandler(){
+    //Destructor
+}
+
 bool FileHandler::LeerFichero(vector<actividad> &actividades , const char* nombre_archivo){
 
     //Creamos el fichero

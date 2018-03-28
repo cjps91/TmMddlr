@@ -21,23 +21,10 @@
 				</ResourceCompiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxbase31u.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxbase31u_net.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxbase31u_xml.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxexpat.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxjpeg.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_adv.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_aui.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_core.a" />
+					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_gl.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_html.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_media.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_propgrid.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_ribbon.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_richtext.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_stc.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_webview.a" />
-					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxmsw31u_xrc.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxpng.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxregexu.a" />
 					<Add library="C:/wxWidgets-3.1.0/lib/gcc_dll/libwxscintilla.a" />
@@ -51,6 +38,7 @@
 			<Add option="-Wall" />
 			<Add option="-pipe" />
 			<Add option="-mthreads" />
+			<Add option="-lwinmm" />
 			<Add option="-D__GNUWIN32__" />
 			<Add option="-D__WXMSW__" />
 			<Add option="-DWXUSINGDLL" />
@@ -62,51 +50,9 @@
 		</ResourceCompiler>
 		<Linker>
 			<Add option="-mthreads" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxbase31u.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxbase31u_net.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxbase31u_xml.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxbase31ud.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxbase31ud_net.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxbase31ud_xml.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxexpat.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxexpatd.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxjpeg.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxjpegd.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_adv.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_aui.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_core.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_gl.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_html.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_media.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_propgrid.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_ribbon.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_richtext.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_stc.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_webview.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31u_xrc.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_adv.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_aui.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_core.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_gl.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_html.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_media.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_propgrid.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_ribbon.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_richtext.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_stc.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_webview.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxmsw31ud_xrc.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxpng.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxpngd.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxregexu.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxregexud.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxscintilla.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxscintillad.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxtiff.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxtiffd.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxzlib.a" />
-			<Add library="C:/wxWidgets-3.1.0/lib/gcc510TDM_dll/libwxzlibd.a" />
 		</Linker>
+		<Unit filename="Acerca_de.cpp" />
+		<Unit filename="Acerca_de.h" />
 		<Unit filename="ActivityHandler.cpp" />
 		<Unit filename="ActivityHandler.h" />
 		<Unit filename="FileHandler.cpp" />
@@ -115,9 +61,13 @@
 		<Unit filename="TMApp.h" />
 		<Unit filename="TMMain.cpp" />
 		<Unit filename="TMMain.h" />
+		<Unit filename="VisualizarJornada.cpp" />
+		<Unit filename="VisualizarJornada.h" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
+		<Unit filename="wxsmith/Acerca_de.wxs" />
+		<Unit filename="wxsmith/VisualizarJornada.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />
@@ -127,6 +77,8 @@
 				<gui name="wxWidgets" src="TMApp.cpp" main="TMFrame" init_handlers="necessary" language="CPP" />
 				<resources>
 					<wxFrame wxs="wxsmith/TMframe.wxs" src="TMMain.cpp" hdr="TMMain.h" fwddecl="0" i18n="1" name="TMFrame" language="CPP" />
+					<wxDialog wxs="wxsmith/Acerca_de.wxs" src="Acerca_de.cpp" hdr="Acerca_de.h" fwddecl="0" i18n="1" name="Acerca_de" language="CPP" />
+					<wxFrame wxs="wxsmith/VisualizarJornada.wxs" src="VisualizarJornada.cpp" hdr="VisualizarJornada.h" fwddecl="0" i18n="1" name="VisualizarJornada" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>
