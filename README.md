@@ -41,7 +41,8 @@ Para sistemas linux lanzar un terminal en la carpeta donde se extrajo y ejecutar
 
 ~~~
 
-sudo ./TM
+unzip ./release_1.0_linux.zip
+sudo ./release_1.0_linux/TM
 
 ~~~
 

@@ -72,6 +72,7 @@ class TMFrame: public wxFrame
         static const long ID_PANEL1;
         static const long id_Nueva_Jornada;
         static const long id_Guardar_Jornada;
+        static const long id_Exportar;
         static const long id_Salir;
         static const long ID_MENUITEM1;
         static const long id_Mostrar_Historico;
@@ -93,6 +94,7 @@ class TMFrame: public wxFrame
         wxMenuItem* MenuItem5;
         wxMenuItem* MenuItem6;
         wxMenuItem* MenuItem7;
+        wxMenuItem* MenuItem8;
         wxPanel* Panel1;
         wxStatusBar* StatusBar1;
         //*)
