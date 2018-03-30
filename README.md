@@ -13,7 +13,7 @@ La herramienta recopilará esos datos, pero bajo ningún concepto saldrán de su
 
 Los datos recopilados podrán usarse para analizar la productividad, el descanso y la felicidad del usuario, en función de una serie de métricas.
 
-Los datos de la aplicación se exportan en varios formatos entre ellos **CSV** para poder usarse en otras aplicaciones como **Excel**.
+Los datos de la aplicación se exportan en varios formatos entre ellos **CSV** para poder usarse en otras aplicaciones como ***MS Excel*** o ***LibreOffice Math***.
 
 **ACCESIBILIDAD:**
 
