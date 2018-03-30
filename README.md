@@ -35,4 +35,6 @@ usuario descansar.
 
 **INTROUCCIONES DE COMPILACION**
 
-Para más información no duden en visitar http://thetimemeddler.blogspot.com
+
+
+Para más información no duden en visitar http://thetimemeddler.wordpress.com
