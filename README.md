@@ -20,7 +20,7 @@ Los datos de la aplicación se exportan en varios formatos entre ellos **CSV** p
 La interfaz gráfica de TimeMeddler es vistosa y minimalista, adaptada para los casos de daltonismo y otras deficiencias visuales.
 En una próxima versión tendrá nueva funcionalidad para personas con deficiencias visuales severas gracias a la incorporación de sonidos guía.
 
-**FUNCIONES FUTURAS:**
+**FUNCIONES EN DESARROLLO:**
 
 Se preveen las siguientes funcionalidades para la aplicación:
 
@@ -33,8 +33,20 @@ poder realizar mejores planificaciones.
 También podrá ajustarse a otros criterios como el uso de pantallas para recomendar al
 usuario descansar.
 
+**INSTRUCCIONES DE INSTALACIÓN**
+
+Para Sistemas Operativos Windows, descomprimir el archivo del release correspondiente en la carpeta requerida y ejecutar TM.exe
+
+Para sistemas linux lanzar un terminal en la carpeta donde se extrajo y ejecutar la instruccion:
+
+~~~
+
+sudo ./TM
+
+~~~
+
 **INTROUCCIONES DE COMPILACION**
 
-
+Se han utilizado las librerias gráficas wxWidgets y el compilador gcc, se recomienda seguir la guía completa de compilación recogida en la dirección de nuestro blog.
 
 Para más información no duden en visitar http://thetimemeddler.wordpress.com
