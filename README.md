@@ -46,7 +46,7 @@ sudo ./release_1.0_linux/TM
 
 ~~~
 
-**INTROUCCIONES DE COMPILACION**
+**INSTRUCCIONES DE COMPILACIÓN**
 
 Se han utilizado las librerias gráficas wxWidgets y el compilador gcc, se recomienda seguir la guía completa de compilación recogida en la dirección de nuestro blog.
 
