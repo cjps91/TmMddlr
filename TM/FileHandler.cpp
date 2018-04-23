@@ -8,7 +8,7 @@ FileHandler::~FileHandler(){
     //Destructor
 }
 
-bool FileHandler::LeerFichero(vector<actividad> &actividades , const char* nombre_archivo){
+bool FileHandler::LeerFichero(vector<actividad> &actividades , const char *nombre_archivo){
 
     //Creamos el fichero
     FILE *f1;
@@ -38,7 +38,7 @@ bool FileHandler::LeerFichero(vector<actividad> &actividades , const char* nombr
     }
 }
 
-bool FileHandler::EscribirFichero(vector <actividad> &actividades , const char *nombre_archivo){
+bool FileHandler::EscribirFichero(vector <actividad> &actividades , const char * nombre_archivo){
 
     //Creamos el fichero
     FILE *f2;

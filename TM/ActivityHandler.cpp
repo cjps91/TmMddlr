@@ -16,46 +16,45 @@ ActivityHandler::~ActivityHandler(){
 
 void ActivityHandler::iniciarActividad(int tipo){
 
-    char nombre [50];
-    char tiempoTipo [50];
+    string nombre;
+    string buffer;
+    //string nombre;
+    double tiempoTipo;
 
-    struct tm * timeinfo;
     time_t rawtime;
-
-    time ( &rawtime );
-    timeinfo = localtime ( &rawtime );
+    time(&rawtime);
+    tiempoTipo = (double) rawtime;
 
     actividad nueva;
 
 	switch(tipo)
     {
-        case 1: strcpy(nombre,"TRA");
+        case 1: nombre = "ACT_TRABAJO_";
         break;
 
-        case 2: strcpy(nombre,"DES");
+        case 2: nombre = "ACT_DESCANSO_";
         break;
 
-        case 3: strcpy(nombre,"PRO");
+        case 3: nombre = "ACT_PROCRAST_";
 	    break;
 	}
 
-	//tiempoTipo = asctime(timeinfo);
-
-    strcat(nombre, tiempoTipo);
-	//strcat(nombre , asctime(timeinfo));
+	//nombre += nombre + str(tiempoTipo);
 
     nueva.tipo = tipo;
-    nueva.nombre = nombre;
+    nueva.nombre = nombre.c_str();
     nueva.fecha_ini = rawtime;
 	actividades.push_back(nueva);
 
 }
 
 void ActivityHandler::cambiarActividad(int tipo) {
+
     if(actividades.size() > 0){
         time(&actividades.at(actividades.size()-1).fecha_fin);
     }
     iniciarActividad(tipo);
+
 }
 
 time_t ActivityHandler::tiempoTipo(int tipo){
@@ -77,7 +76,7 @@ void ActivityHandler::FinalizarJornada(){
     time(&actividades.at(actividades.size()-1).fecha_fin);
 }
 
-char* ActivityHandler::mostrarTiempoTotal(){
+string ActivityHandler::mostrarTiempoTotal(){
     //Transformar a minutos y segundos
     struct tm *timeinfo;
     time_t tiempo_total = actividades.at(actividades.size()-1).fecha_fin - actividades.at(0).fecha_ini;
@@ -88,27 +87,27 @@ char* ActivityHandler::mostrarTiempoTotal(){
     return(cadena_tiempo);
 }
 
-char* ActivityHandler::mostrarNombre(int i){
+string ActivityHandler::mostrarNombre(int i){
     return(actividades[i].nombre);
 }
 
-char* ActivityHandler::mostrarFechaInicio(int i){
+string ActivityHandler::mostrarFechaInicio(int i){
     struct tm *timeinfo;
     time_t tiempo = actividades[i].fecha_ini;
     timeinfo = localtime(&tiempo);
     return(asctime(timeinfo));
 }
 
-char* ActivityHandler::mostrarFechaFin(int i){
+string ActivityHandler::mostrarFechaFin(int i){
     struct tm *timeinfo;
     time_t tiempo = actividades[i].fecha_fin;
     timeinfo = localtime(&tiempo);
     return(asctime(timeinfo));
 }
 
-char* ActivityHandler::mostrarTipo(int i){
+string ActivityHandler::mostrarTipo(int i){
 
-    char* tipo;
+    string tipo;
 
     switch(actividades[i].tipo)
     {
