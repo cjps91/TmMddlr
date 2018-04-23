@@ -35,7 +35,7 @@ usuario descansar.
 
 **INSTRUCCIONES DE INSTALACIÓN**
 
-Para Sistemas Operativos Windows, descomprimir el archivo del release correspondiente en la carpeta requerida y ejecutar TM.exe
+Para Sistemas Operativos Windows, descomprimir el archivo del release y ejecutar TM.exe
 
 Para sistemas linux lanzar un terminal en la carpeta donde se extrajo y ejecutar la instruccion:
 
