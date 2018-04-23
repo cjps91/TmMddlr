@@ -89,15 +89,15 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_MENU));
     {
     	wxIcon FrameIcon;
-    	FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T("images\\TM_icon.png"))));
+    	FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T(".\\images\\icon.png"))));
     	SetIcon(FrameIcon);
     }
     Panel1 = new wxPanel(this, ID_PANEL1, wxPoint(8,16), wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL1"));
-    BotonStop = new wxBitmapButton(Panel1, ID_BITMAPBUTTON4, wxBitmap(wxImage(_T("C:\\Users\\Hannibal\\Desktop\\PROYECTOS\\TmMddlr\\TM\\bin\\Release\\images\\boton_stop.png"))), wxPoint(32,24), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON4"));
-    BotonTrabajo = new wxBitmapButton(Panel1, ID_BITMAPBUTTON1, wxBitmap(wxImage(_T("C:\\Users\\Hannibal\\Desktop\\PROYECTOS\\TmMddlr\\TM\\bin\\Release\\images\\boton_trabajo.png"))), wxPoint(136,112), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON1"));
-    BotonVisor = new wxBitmapButton(Panel1, ID_BITMAPBUTTON5, wxBitmap(wxImage(_T("C:\\Users\\Hannibal\\Desktop\\PROYECTOS\\TmMddlr\\TM\\bin\\Release\\images\\boton_visor.png"))), wxPoint(320,24), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON5"));
-    BotonDescanso = new wxBitmapButton(Panel1, ID_BITMAPBUTTON2, wxBitmap(wxImage(_T("C:\\Users\\Hannibal\\Desktop\\PROYECTOS\\TmMddlr\\TM\\bin\\Release\\images\\boton_descanso.png"))), wxPoint(32,296), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON2"));
-    BotonProcastinacion = new wxBitmapButton(Panel1, ID_BITMAPBUTTON3, wxBitmap(wxImage(_T("C:\\Users\\Hannibal\\Desktop\\PROYECTOS\\TmMddlr\\TM\\bin\\Release\\images\\boton_procast.png"))), wxPoint(240,296), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON3"));
+    BotonStop = new wxBitmapButton(Panel1, ID_BITMAPBUTTON4, wxBitmap(wxImage(_T(".\\images\\boton_stop.png"))), wxPoint(32,24), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON4"));
+    BotonTrabajo = new wxBitmapButton(Panel1, ID_BITMAPBUTTON1, wxBitmap(wxImage(_T(".\\images\\boton_trabajo.png"))), wxPoint(136,112), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON1"));
+    BotonVisor = new wxBitmapButton(Panel1, ID_BITMAPBUTTON5, wxBitmap(wxImage(_T(".\\images\\boton_visor.png"))), wxPoint(320,24), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON5"));
+    BotonDescanso = new wxBitmapButton(Panel1, ID_BITMAPBUTTON2, wxBitmap(wxImage(_T(".\\images\\boton_descanso.png"))), wxPoint(32,296), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON2"));
+    BotonProcastinacion = new wxBitmapButton(Panel1, ID_BITMAPBUTTON3, wxBitmap(wxImage(_T(".\\images\\boton_procast.png"))), wxPoint(240,296), wxDefaultSize, wxBU_AUTODRAW|wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON3"));
     MenuBar1 = new wxMenuBar();
     Menu1 = new wxMenu();
     MenuItem3 = new wxMenuItem(Menu1, id_Nueva_Jornada, _("Nueva Jornada"), _("Iniciar una nueva jornada"), wxITEM_NORMAL);
@@ -187,7 +187,7 @@ void TMFrame::OnMenuAboutSelected(wxCommandEvent& event)
 
 void TMFrame::OnBotonStopClick(wxCommandEvent& event)
 {
-    PlaySound(TEXT("sounds\\stop.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    //PlaySound(TEXT("sounds\\stop.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 
     ah->FinalizarJornada();
     BotonTrabajo->Disable();
@@ -202,7 +202,7 @@ void TMFrame::OnBotonVisorClick(wxCommandEvent& event)
     VJ = new VisualizarJornada(this);
     VJ->Show();
 
-    PlaySound(TEXT("sounds\\visor.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    //PlaySound(TEXT("sounds\\visor.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 
     if(ah->cantidad_actividades() == 0){
         wxMessageBox("Aun no hay actividades.");
@@ -232,7 +232,7 @@ void TMFrame::OnBotonTrabajoClick(wxCommandEvent& event)
     BotonDescanso->Enable();
     BotonProcastinacion->Enable();
     //sndPlaySound(TEXT("sounds\\wine_glass.wav"),0);
-    PlaySound(TEXT("sounds\\trabajo.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    //PlaySound(TEXT("sounds\\trabajo.wav"), NULL ,SND_ASYNC | SND_FILENAME);
     StatusBar1->SetStatusText("Actual - Trabajo",1);
 }
 
@@ -244,7 +244,7 @@ void TMFrame::OnBotonProcastinacionClick(wxCommandEvent& event)
     BotonDescanso->Enable();
     BotonProcastinacion->Disable();
     StatusBar1->SetStatusText("Actual - Procrastinar",1);
-    PlaySound(TEXT("sounds\\procastinar.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    //PlaySound(TEXT("sounds\\procastinar.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 }
 
 void TMFrame::OnBotonDescansoClick1(wxCommandEvent& event)
@@ -255,7 +255,7 @@ void TMFrame::OnBotonDescansoClick1(wxCommandEvent& event)
     BotonDescanso->Disable();
     BotonProcastinacion->Enable();
     StatusBar1->SetStatusText("Actual - Descanso",1);
-    PlaySound(TEXT("sounds\\descanso.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    //PlaySound(TEXT("sounds\\descanso.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 }
 
 void TMFrame::OnMenuNuevaJornadaSelected(wxCommandEvent& event)
@@ -265,7 +265,7 @@ void TMFrame::OnMenuNuevaJornadaSelected(wxCommandEvent& event)
     BotonDescanso->Enable();
     BotonProcastinacion->Enable();
     StatusBar1->SetStatusText("Actual - Nueva Jornada",1);
-    PlaySound(TEXT("sounds\\nueva_jornada.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    //PlaySound(TEXT("sounds\\nueva_jornada.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 }
 
 void TMFrame::OnMenuExportarCSVSelected(wxCommandEvent& event)

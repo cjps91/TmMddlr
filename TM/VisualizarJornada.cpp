@@ -35,7 +35,7 @@ VisualizarJornada::VisualizarJornada(wxWindow* parent,wxWindowID id,const wxPoin
 	SetFocus();
 	{
 		wxIcon FrameIcon;
-		FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T("C:\\Users\\Hannibal\\Desktop\\PROYECTOS\\TmMddlr\\TM\\bin\\Release\\images\\TM_icon.png"))));
+		FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T(".\\images\\icon.png"))));
 		SetIcon(FrameIcon);
 	}
 	Panel1 = new wxPanel(this, ID_PANEL1, wxPoint(144,168), wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL1"));

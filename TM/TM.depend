@@ -2698,3 +2698,92 @@
 1456698816 c:\wxwidgets-3.1.0\include\wx\qt\statbox.h
 	<QtWidgets/QGroupBox>
 
+1524504425 source:c:\users\icarl\tmmddlr\tm\acerca_de.cpp
+	"Acerca_de.h"
+	<wx/bitmap.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/string.h>
+
+1524503912 c:\users\icarl\tmmddlr\tm\acerca_de.h
+	<wx/button.h>
+	<wx/dialog.h>
+	<wx/hyperlink.h>
+	<wx/statbmp.h>
+	<wx/stattext.h>
+
+1524503912 source:c:\users\icarl\tmmddlr\tm\activityhandler.cpp
+	"ActivityHandler.h"
+	<string.h>
+	<stdio.h>
+	<iostream>
+
+1524503912 c:\users\icarl\tmmddlr\tm\activityhandler.h
+	<time.h>
+	"FileHandler.h"
+
+1524503912 c:\users\icarl\tmmddlr\tm\filehandler.h
+	<time.h>
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<iostream>
+
+1524503912 source:c:\users\icarl\tmmddlr\tm\filehandler.cpp
+	"FileHandler.h"
+	<time.h>
+	<stdio.h>
+	<fstream>
+
+1524503912 source:c:\users\icarl\tmmddlr\tm\resource.rc
+	"wx/msw/wx.rc"
+
+1524503912 source:c:\users\icarl\tmmddlr\tm\tmapp.cpp
+	"TMApp.h"
+	"TMMain.h"
+	<wx/image.h>
+
+1524503912 c:\users\icarl\tmmddlr\tm\tmapp.h
+	<wx/app.h>
+
+1524503912 c:\users\icarl\tmmddlr\tm\tmmain.h
+	<wx/bmpbuttn.h>
+	<wx/frame.h>
+	<wx/menu.h>
+	<wx/panel.h>
+	<wx/statusbr.h>
+	"VisualizarJornada.h"
+	"FileHandler.h"
+	"ActivityHandler.h"
+	"Acerca_de.h"
+
+1524503912 c:\users\icarl\tmmddlr\tm\visualizarjornada.h
+	<wx/frame.h>
+	<wx/listctrl.h>
+	<wx/panel.h>
+	<wx/statbox.h>
+	<wx/stattext.h>
+
+1524504380 source:c:\users\icarl\tmmddlr\tm\tmmain.cpp
+	"TMMain.h"
+	<wx/msgdlg.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<wx/bitmap.h>
+	<wx/icon.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/settings.h>
+	<wx/string.h>
+
+1524504333 source:c:\users\icarl\tmmddlr\tm\visualizarjornada.cpp
+	"VisualizarJornada.h"
+	<wx/bitmap.h>
+	<wx/font.h>
+	<wx/icon.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/string.h>
+

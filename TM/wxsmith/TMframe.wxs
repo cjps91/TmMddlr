@@ -3,7 +3,7 @@
 	<object class="wxFrame" name="TMFrame">
 		<title>TimeMeddler</title>
 		<centered>1</centered>
-		<icon>images\TM_icon.png</icon>
+		<icon>.\images\icon.png</icon>
 		<size>450,550</size>
 		<focused>1</focused>
 		<fg>wxSYS_COLOUR_ACTIVEBORDER</fg>
@@ -16,31 +16,31 @@
 		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
 			<pos>8,16</pos>
 			<object class="wxBitmapButton" name="ID_BITMAPBUTTON4" variable="BotonStop" member="yes">
-				<bitmap>C:\Users\Hannibal\Desktop\PROYECTOS\TmMddlr\TM\bin\Release\images\boton_stop.png</bitmap>
+				<bitmap>.\images\boton_stop.png</bitmap>
 				<pos>32,24</pos>
 				<style>wxBU_AUTODRAW|wxNO_BORDER</style>
 				<handler function="OnBotonStopClick" entry="EVT_BUTTON" />
 			</object>
 			<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="BotonTrabajo" member="yes">
-				<bitmap>C:\Users\Hannibal\Desktop\PROYECTOS\TmMddlr\TM\bin\Release\images\boton_trabajo.png</bitmap>
+				<bitmap>.\images\boton_trabajo.png</bitmap>
 				<pos>136,112</pos>
 				<style>wxBU_AUTODRAW|wxNO_BORDER</style>
 				<handler function="OnBotonTrabajoClick" entry="EVT_BUTTON" />
 			</object>
 			<object class="wxBitmapButton" name="ID_BITMAPBUTTON5" variable="BotonVisor" member="yes">
-				<bitmap>C:\Users\Hannibal\Desktop\PROYECTOS\TmMddlr\TM\bin\Release\images\boton_visor.png</bitmap>
+				<bitmap>.\images\boton_visor.png</bitmap>
 				<pos>320,24</pos>
 				<style>wxBU_AUTODRAW|wxNO_BORDER</style>
 				<handler function="OnBotonVisorClick" entry="EVT_BUTTON" />
 			</object>
 			<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="BotonDescanso" member="yes">
-				<bitmap>C:\Users\Hannibal\Desktop\PROYECTOS\TmMddlr\TM\bin\Release\images\boton_descanso.png</bitmap>
+				<bitmap>.\images\boton_descanso.png</bitmap>
 				<pos>32,296</pos>
 				<style>wxBU_AUTODRAW|wxNO_BORDER</style>
 				<handler function="OnBotonDescansoClick1" entry="EVT_BUTTON" />
 			</object>
 			<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="BotonProcastinacion" member="yes">
-				<bitmap>C:\Users\Hannibal\Desktop\PROYECTOS\TmMddlr\TM\bin\Release\images\boton_procast.png</bitmap>
+				<bitmap>.\images\boton_procast.png</bitmap>
 				<pos>240,296</pos>
 				<style>wxBU_AUTODRAW|wxNO_BORDER</style>
 				<handler function="OnBotonProcastinacionClick" entry="EVT_BUTTON" />

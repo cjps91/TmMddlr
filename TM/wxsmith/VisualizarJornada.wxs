@@ -3,7 +3,7 @@
 	<object class="wxFrame" name="VisualizarJornada">
 		<title>TimeMeddler - Visor</title>
 		<centered>1</centered>
-		<icon>C:\Users\Hannibal\Desktop\PROYECTOS\TmMddlr\TM\bin\Release\images\TM_icon.png</icon>
+		<icon>.\images\icon.png</icon>
 		<size>640,412</size>
 		<focused>1</focused>
 		<id_arg>0</id_arg>
