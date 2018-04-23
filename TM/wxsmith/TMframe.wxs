@@ -3,7 +3,7 @@
 	<object class="wxFrame" name="TMFrame">
 		<title>TimeMeddler</title>
 		<centered>1</centered>
-		<icon>C:\Users\Hannibal\Desktop\PROYECTOS\TmMddlr\TM\bin\Release\images\TM_icon.png</icon>
+		<icon>images\TM_icon.png</icon>
 		<size>450,550</size>
 		<focused>1</focused>
 		<fg>wxSYS_COLOUR_ACTIVEBORDER</fg>
@@ -62,6 +62,7 @@
 				<object class="wxMenuItem" name="id_Exportar" variable="MenuItem8" member="yes">
 					<label>Exportar a CSV</label>
 					<help>Exportar a CSV</help>
+					<handler function="OnMenuExportarCSVSelected" entry="EVT_MENU" />
 				</object>
 				<object class="wxMenuItem" name="id_Salir" variable="MenuItem1" member="no">
 					<label>Salir</label>

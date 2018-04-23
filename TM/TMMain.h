@@ -61,6 +61,7 @@ class TMFrame: public wxFrame
         void OnClose(wxCloseEvent& event);
         void OnClose1(wxCloseEvent& event);
         void OnMenuNuevaJornadaSelected(wxCommandEvent& event);
+        void OnMenuExportarCSVSelected(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(TMFrame)

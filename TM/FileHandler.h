@@ -31,8 +31,8 @@ class FileHandler{
 		FileHandler(vector <actividad> &vector_actividades){ this->actividades = vector_actividades; }
 		~FileHandler();
 		bool LeerFichero(vector <actividad> &vector_actividades, const char* nombre_archivo);
-		bool EscribirFichero(vector <actividad> vector_actividades, const char* nombre_archivo);
-
+		bool EscribirFichero(vector <actividad> &vector_actividades, const char* nombre_archivo);
+		void EscribirFicheroCSV(vector <actividad> &vector_actividades, const char* nombre_archivo);
 };
 
 

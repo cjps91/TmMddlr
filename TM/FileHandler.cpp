@@ -1,6 +1,8 @@
 #include "FileHandler.h"
 #include <time.h>
 #include <stdio.h>
+#include <fstream>
+
 
 FileHandler::~FileHandler(){
     //Destructor
@@ -36,7 +38,7 @@ bool FileHandler::LeerFichero(vector<actividad> &actividades , const char* nombr
     }
 }
 
-bool FileHandler::EscribirFichero(vector <actividad> actividades , const char *nombre_archivo){
+bool FileHandler::EscribirFichero(vector <actividad> &actividades , const char *nombre_archivo){
 
     //Creamos el fichero
     FILE *f2;
@@ -60,4 +62,25 @@ bool FileHandler::EscribirFichero(vector <actividad> actividades , const char *n
         fclose(f2);
         return true;
     }
+}
+
+void FileHandler::EscribirFicheroCSV(vector <actividad> &vector_actividades, const char* nombre_archivo){
+
+    char cadena[500];
+
+    char *fecha_inicio;
+    char *fecha_fin;
+
+    ofstream fs(nombre_archivo);
+
+    fs<<"Tipo"<<";"<<"Fecha_inicio"<<";"<<"Fecha_fin"<<endl;
+
+    for(int i = 0; i < vector_actividades.size() ; i++){
+        fecha_inicio = ctime(&vector_actividades[i].fecha_ini);
+        fecha_fin = ctime(&vector_actividades[i].fecha_fin);
+        fs<<vector_actividades[i].tipo<<";"<<fecha_inicio<<";"<<fecha_fin<<endl;
+    }
+
+    fs.close();
+
 }

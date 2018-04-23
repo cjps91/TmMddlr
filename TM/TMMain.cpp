@@ -89,7 +89,7 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_MENU));
     {
     	wxIcon FrameIcon;
-    	FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T("C:\\Users\\Hannibal\\Desktop\\PROYECTOS\\TmMddlr\\TM\\bin\\Release\\images\\TM_icon.png"))));
+    	FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T("images\\TM_icon.png"))));
     	SetIcon(FrameIcon);
     }
     Panel1 = new wxPanel(this, ID_PANEL1, wxPoint(8,16), wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL1"));
@@ -137,6 +137,7 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     Connect(ID_BITMAPBUTTON3,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&TMFrame::OnBotonProcastinacionClick);
     Connect(id_Nueva_Jornada,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnMenuNuevaJornadaSelected);
     Connect(id_Guardar_Jornada,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnMenuGuardarJornadaSelected);
+    Connect(id_Exportar,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnMenuExportarCSVSelected);
     Connect(id_Salir,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnQuit);
     Connect(ID_MENUITEM1,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnBotonVisorClick);
     Connect(Acercade,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnMenuAboutSelected);
@@ -144,8 +145,8 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     //*)
 
     About = new Acerca_de(this);
-    fh = new FileHandler(this->actividades);
-    ah = new ActivityHandler(this->actividades);
+    fh = new FileHandler(actividades);
+    ah = new ActivityHandler(actividades);
 
 }
 
@@ -160,13 +161,12 @@ void TMFrame::OnQuit(wxCommandEvent& event)
     Close();
 }
 
-void TMFrame::OnClose(wxCloseEvent& event){
-
+void TMFrame::OnClose(wxCloseEvent& event)
+{
         wxMessageBox("Hasta luego\nGracias por utilizar TimeMeddler.");
         delete(fh);
         delete(ah);
         Destroy();
-
 }
 
 void TMFrame::OnAbout(wxCommandEvent& event)
@@ -187,17 +187,22 @@ void TMFrame::OnMenuAboutSelected(wxCommandEvent& event)
 
 void TMFrame::OnBotonStopClick(wxCommandEvent& event)
 {
+    PlaySound(TEXT("sounds\\stop.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+
     ah->FinalizarJornada();
     BotonTrabajo->Disable();
     BotonDescanso->Disable();
     BotonProcastinacion->Disable();
     BotonVisor->Enable();
+    StatusBar1->SetStatusText("Actual - STOP",1);
 }
 
 void TMFrame::OnBotonVisorClick(wxCommandEvent& event)
 {
     VJ = new VisualizarJornada(this);
     VJ->Show();
+
+    PlaySound(TEXT("sounds\\visor.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 
     if(ah->cantidad_actividades() == 0){
         wxMessageBox("Aun no hay actividades.");
@@ -215,6 +220,8 @@ void TMFrame::OnBotonVisorClick(wxCommandEvent& event)
         VJ->StaticText5->SetLabel(ah->porcentajeActividad(DESCANSO));
         VJ->StaticText6->SetLabel(ah->porcentajeActividad(PROCRASTINACION));
     }
+    StatusBar1->SetStatusText("",1);
+
 }
 
 void TMFrame::OnBotonTrabajoClick(wxCommandEvent& event)
@@ -225,8 +232,8 @@ void TMFrame::OnBotonTrabajoClick(wxCommandEvent& event)
     BotonDescanso->Enable();
     BotonProcastinacion->Enable();
     //sndPlaySound(TEXT("sounds\\wine_glass.wav"),0);
-    //PlaySound(TEXT("sounds\\wine_glass.wav"), NULL ,SND_ASYNC | SND_FILENAME);
-    PlaySound(TEXT("sounds\\Wololo.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    PlaySound(TEXT("sounds\\trabajo.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    StatusBar1->SetStatusText("Actual - Trabajo",1);
 }
 
 void TMFrame::OnBotonProcastinacionClick(wxCommandEvent& event)
@@ -236,6 +243,8 @@ void TMFrame::OnBotonProcastinacionClick(wxCommandEvent& event)
     BotonTrabajo->Enable();
     BotonDescanso->Enable();
     BotonProcastinacion->Disable();
+    StatusBar1->SetStatusText("Actual - Procrastinar",1);
+    PlaySound(TEXT("sounds\\procastinar.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 }
 
 void TMFrame::OnBotonDescansoClick1(wxCommandEvent& event)
@@ -245,7 +254,8 @@ void TMFrame::OnBotonDescansoClick1(wxCommandEvent& event)
     BotonTrabajo->Enable();
     BotonDescanso->Disable();
     BotonProcastinacion->Enable();
-
+    StatusBar1->SetStatusText("Actual - Descanso",1);
+    PlaySound(TEXT("sounds\\descanso.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 }
 
 void TMFrame::OnMenuNuevaJornadaSelected(wxCommandEvent& event)
@@ -254,4 +264,11 @@ void TMFrame::OnMenuNuevaJornadaSelected(wxCommandEvent& event)
     BotonTrabajo->Enable();
     BotonDescanso->Enable();
     BotonProcastinacion->Enable();
+    StatusBar1->SetStatusText("Actual - Nueva Jornada",1);
+    PlaySound(TEXT("sounds\\nueva_jornada.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+}
+
+void TMFrame::OnMenuExportarCSVSelected(wxCommandEvent& event)
+{
+    fh->EscribirFicheroCSV(actividades,"prueba.csv");
 }

@@ -15,10 +15,38 @@ ActivityHandler::~ActivityHandler(){
 }
 
 void ActivityHandler::iniciarActividad(int tipo){
-	actividad nueva;
-	time(&nueva.fecha_ini);
+
+    char nombre [50];
+    char tiempoTipo [50];
+
+    struct tm * timeinfo;
+    time_t rawtime;
+
+    time ( &rawtime );
+    timeinfo = localtime ( &rawtime );
+
+    actividad nueva;
+
+	switch(tipo)
+    {
+        case 1: strcpy(nombre,"TRA");
+        break;
+
+        case 2: strcpy(nombre,"DES");
+        break;
+
+        case 3: strcpy(nombre,"PRO");
+	    break;
+	}
+
+	//tiempoTipo = asctime(timeinfo);
+
+    strcat(nombre, tiempoTipo);
+	//strcat(nombre , asctime(timeinfo));
+
     nueva.tipo = tipo;
-    nueva.nombre = "HolaMundo";
+    nueva.nombre = nombre;
+    nueva.fecha_ini = rawtime;
 	actividades.push_back(nueva);
 
 }
@@ -118,7 +146,7 @@ string ActivityHandler::porcentajeActividad(int tipo){
     string string_porcentaje = "";
     char cadena_texto[50] = "";
 
-    double porcentaje = (100 * tiempoTipo(tipo))/(actividades[actividades.size()-1].fecha_fin - actividades[0].fecha_ini);
+    double porcentaje = (float)(100 * tiempoTipo(tipo))/(float)(actividades[actividades.size()-1].fecha_fin - actividades[0].fecha_ini);
 
     sprintf(cadena_texto,"%0.2f %c" , porcentaje, '%');
     string_porcentaje += cadena_texto;
