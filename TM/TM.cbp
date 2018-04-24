@@ -57,6 +57,8 @@
 		<Unit filename="ActivityHandler.h" />
 		<Unit filename="FileHandler.cpp" />
 		<Unit filename="FileHandler.h" />
+		<Unit filename="Manual.cpp" />
+		<Unit filename="Manual.h" />
 		<Unit filename="TMApp.cpp" />
 		<Unit filename="TMApp.h" />
 		<Unit filename="TMMain.cpp" />
@@ -67,6 +69,7 @@
 			<Option compilerVar="WINDRES" />
 		</Unit>
 		<Unit filename="wxsmith/Acerca_de.wxs" />
+		<Unit filename="wxsmith/Manual.wxs" />
 		<Unit filename="wxsmith/VisualizarJornada.wxs" />
 		<Extensions>
 			<code_completion />
@@ -79,6 +82,7 @@
 					<wxFrame wxs="wxsmith/TMframe.wxs" src="TMMain.cpp" hdr="TMMain.h" fwddecl="0" i18n="1" name="TMFrame" language="CPP" />
 					<wxDialog wxs="wxsmith/Acerca_de.wxs" src="Acerca_de.cpp" hdr="Acerca_de.h" fwddecl="0" i18n="1" name="Acerca_de" language="CPP" />
 					<wxFrame wxs="wxsmith/VisualizarJornada.wxs" src="VisualizarJornada.cpp" hdr="VisualizarJornada.h" fwddecl="0" i18n="1" name="VisualizarJornada" language="CPP" />
+					<wxDialog wxs="wxsmith/Manual.wxs" src="Manual.cpp" hdr="Manual.h" fwddecl="0" i18n="1" name="Manual" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>

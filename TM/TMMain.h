@@ -22,6 +22,7 @@
 #include "FileHandler.h"
 #include "ActivityHandler.h"
 #include "Acerca_de.h"
+#include "Manual.h"
 
 class TMFrame: public wxFrame
 {
@@ -37,6 +38,7 @@ class TMFrame: public wxFrame
         ActivityHandler *ah;
         VisualizarJornada *VJ;
         Acerca_de *About;
+        Manual *ventana_manual;
 
         //(*Handlers(TMFrame)
         void OnQuit(wxCommandEvent& event);
@@ -62,6 +64,7 @@ class TMFrame: public wxFrame
         void OnClose1(wxCloseEvent& event);
         void OnMenuNuevaJornadaSelected(wxCommandEvent& event);
         void OnMenuExportarCSVSelected(wxCommandEvent& event);
+        void OnMenuManualSelected(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(TMFrame)

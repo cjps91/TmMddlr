@@ -2826,7 +2826,7 @@
 1524564251 c:\users\hannibal\tm\tmmddlr\tm\tmapp.h
 	<wx/app.h>
 
-1524564251 c:\users\hannibal\tm\tmmddlr\tm\tmmain.h
+1524567006 c:\users\hannibal\tm\tmmddlr\tm\tmmain.h
 	<wx/bmpbuttn.h>
 	<wx/frame.h>
 	<wx/menu.h>
@@ -2836,6 +2836,7 @@
 	"FileHandler.h"
 	"ActivityHandler.h"
 	"Acerca_de.h"
+	"Manual.h"
 
 1524564251 c:\users\hannibal\tm\tmmddlr\tm\visualizarjornada.h
 	<wx/frame.h>
@@ -2869,4 +2870,25 @@
 	<wx/intl.h>
 	<wx/settings.h>
 	<wx/string.h>
+
+1524564935 source:c:\users\hannibal\tm\tmmddlr\tm\activityhandler.cpp
+	"ActivityHandler.h"
+	<string.h>
+	<stdio.h>
+	<sstream>
+	<iostream>
+
+1524566722 source:c:\users\hannibal\tm\tmmddlr\tm\manual.cpp
+	"Manual.h"
+	<wx/bitmap.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/string.h>
+
+1524566412 c:\users\hannibal\tm\tmmddlr\tm\manual.h
+	<wx/button.h>
+	<wx/dialog.h>
+	<wx/statbmp.h>
+	<wx/statbox.h>
+	<wx/textctrl.h>
 

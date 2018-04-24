@@ -140,6 +140,7 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     Connect(id_Exportar,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnMenuExportarCSVSelected);
     Connect(id_Salir,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnQuit);
     Connect(ID_MENUITEM1,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnBotonVisorClick);
+    Connect(id_Manual,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnMenuManualSelected);
     Connect(Acercade,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&TMFrame::OnMenuAboutSelected);
     Connect(wxID_ANY,wxEVT_CLOSE_WINDOW,(wxObjectEventFunction)&TMFrame::OnClose);
     //*)
@@ -147,6 +148,7 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     About = new Acerca_de(this);
     fh = new FileHandler(actividades);
     ah = new ActivityHandler(actividades);
+    ventana_manual = new Manual(this);
 
 }
 
@@ -271,4 +273,9 @@ void TMFrame::OnMenuNuevaJornadaSelected(wxCommandEvent& event)
 void TMFrame::OnMenuExportarCSVSelected(wxCommandEvent& event)
 {
     fh->EscribirFicheroCSV(actividades,"prueba.csv");
+}
+
+void TMFrame::OnMenuManualSelected(wxCommandEvent& event)
+{
+    ventana_manual->Show();
 }

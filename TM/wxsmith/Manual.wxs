@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="Manual">
+		<size>493,592</size>
+		<id_arg>0</id_arg>
+		<object class="wxStaticBox" name="ID_STATICBOX1" variable="StaticBox1" member="yes">
+			<label>Manual</label>
+			<pos>16,16</pos>
+			<size>464,248</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<label>Cerrar</label>
+			<pos>208,528</pos>
+			<handler function="OnButton1Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxStaticBox" name="ID_STATICBOX2" variable="StaticBox2" member="yes">
+			<label>Atajos de teclado</label>
+			<pos>16,272</pos>
+			<size>464,232</size>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+			<value>Índice&#x0A;1. Introducción&#x0A;1.1 ¿Qué es TimeMeddler?&#x0A;1.2 Fundamentos básicos&#x0A;2. Operaciones básicas&#x0A;3. Comentarios&#x0A;1. Introducción&#x0A;&#x0A;1.1 ¿Qué es TimeMeddler?&#x0A;TimeMeddler es una sencilla herramienta para controlar el tiempo de trabajo, descanso y&#x0A;procrastinación. Ha sido concebida para facilitar la gestión del tiempo de forma&#x0A;totalmente transparente para el usuario y sin comprometer su privacidad.&#x0A;La privacidad es una prioridad.&#x0A;&#x0A;1.2 Fundamentos básicos&#x0A;&#x0A;Se definen 3 estados posibles:&#x0A;Trabajo: El usuario está desarrollando una actividad productiva relacionada con su&#x0A;profesión. &#x0A;Descanso: El usuario no desarrolla actividad alguna.&#x0A;Procrastinación: El usuario desarrolla actividades no productivas en horario que se supone de trabajo.&#x0A;La herramienta recopilará esos datos, pero bajo ningún concepto saldrán de su equipo ni serán empleados por empresas externas.&#x0A;&#x0A;Los datos recopilados se usarán para analizar la productividad, el descanso y la felicidad del usuario, en función de una serie de métricas.&#x0A;&#x0A;El funcionamiento normal de TimeMeddler viene dado en la siguiente secuencia:&#x0A;&#x0A;1. Iniciar Jornada. Simplemente pulsar el tipo de actividad que se vaya a realizar.&#x0A;2. Cambiar de Tipo de Actividad. Pulsar un tipo de actividad diferente a la actual.&#x0A;3. Fin de Jornada. Pulsar el botón de Stop.&#x0A;4. Revisión de Jornada. Pulsar el Visor para ver el informe sobre la jornada.&#x0A;&#x0A;Una jornada no podrá ser revisada salvo que esta haya finalizado.&#x0A;&#x0A;3. Comentarios&#x0A;Puede que algunas funciones no se encuentren disponibles en el momento de lectura de este manual.</value>
+			<pos>64,56</pos>
+			<size>376,192</size>
+			<style>wxTE_MULTILINE</style>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="StaticBitmap1" member="yes">
+			<bitmap>images/Atajos.png</bitmap>
+			<pos>64,296</pos>
+			<size>376,192</size>
+		</object>
+	</object>
+</wxsmith>

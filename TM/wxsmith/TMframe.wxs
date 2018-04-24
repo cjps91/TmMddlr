@@ -85,6 +85,7 @@
 				<label>Ayuda</label>
 				<object class="wxMenuItem" name="id_Manual" variable="MenuItem4" member="yes">
 					<label>Manual de Time Meddler</label>
+					<handler function="OnMenuManualSelected" entry="EVT_MENU" />
 				</object>
 				<object class="wxMenuItem" name="Acercade" variable="MenuItem2" member="yes">
 					<label>Acerca de</label>
