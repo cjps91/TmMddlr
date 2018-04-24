@@ -149,6 +149,7 @@ TMFrame::TMFrame(wxWindow* parent,wxWindowID id)
     fh = new FileHandler(actividades);
     ah = new ActivityHandler(actividades);
     ventana_manual = new Manual(this);
+    BotonStop->Disable();
 
 }
 
@@ -230,6 +231,7 @@ void TMFrame::OnBotonTrabajoClick(wxCommandEvent& event)
 {
     BotonVisor->Disable();
     ah->cambiarActividad(TRABAJO);
+    BotonStop->Enable();
     BotonTrabajo->Disable();
     BotonDescanso->Enable();
     BotonProcastinacion->Enable();
@@ -242,6 +244,7 @@ void TMFrame::OnBotonProcastinacionClick(wxCommandEvent& event)
 {
     BotonVisor->Disable();
     ah->cambiarActividad(PROCRASTINACION);
+    BotonStop->Enable();
     BotonTrabajo->Enable();
     BotonDescanso->Enable();
     BotonProcastinacion->Disable();
@@ -253,6 +256,7 @@ void TMFrame::OnBotonDescansoClick1(wxCommandEvent& event)
 {
     BotonVisor->Disable();
     ah->cambiarActividad(DESCANSO);
+    BotonStop->Enable();
     BotonTrabajo->Enable();
     BotonDescanso->Disable();
     BotonProcastinacion->Enable();
@@ -268,6 +272,7 @@ void TMFrame::OnMenuNuevaJornadaSelected(wxCommandEvent& event)
     BotonProcastinacion->Enable();
     StatusBar1->SetStatusText("Actual - Nueva Jornada",1);
     PlaySound(TEXT("sounds\\nueva_jornada.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    BotonStop->Disable();
 }
 
 void TMFrame::OnMenuExportarCSVSelected(wxCommandEvent& event)

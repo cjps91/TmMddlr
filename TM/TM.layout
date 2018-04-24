@@ -4,7 +4,7 @@
 	<ActiveTarget name="Release" />
 	<File name="Acerca_de.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="467" topLine="10" />
+			<Cursor1 position="2007" topLine="10" />
 		</Cursor>
 	</File>
 	<File name="Acerca_de.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -14,7 +14,7 @@
 	</File>
 	<File name="ActivityHandler.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="528" topLine="0" />
+			<Cursor1 position="243" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="ActivityHandler.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -44,12 +44,12 @@
 	</File>
 	<File name="TMMain.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7922" topLine="159" />
+			<Cursor1 position="10817" topLine="241" />
 		</Cursor>
 	</File>
 	<File name="TMMain.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="934" topLine="25" />
+			<Cursor1 position="609" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="VisualizarJornada.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -60,6 +60,16 @@
 	<File name="VisualizarJornada.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="87" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Manual.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="544" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="Manual.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="592" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
