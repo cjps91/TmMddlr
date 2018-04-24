@@ -1,6 +1,7 @@
 #include "ActivityHandler.h"
 #include <string.h>
 #include <stdio.h>
+#include <sstream>
 #include <iostream>
 using namespace std;
 
@@ -25,6 +26,10 @@ void ActivityHandler::iniciarActividad(int tipo){
     time(&rawtime);
     tiempoTipo = (double) rawtime;
 
+    ostringstream strs;
+    strs << tiempoTipo;
+    string str = strs.str();
+
     actividad nueva;
 
 	switch(tipo)
@@ -39,7 +44,7 @@ void ActivityHandler::iniciarActividad(int tipo){
 	    break;
 	}
 
-	//nombre += nombre + str(tiempoTipo);
+	nombre += str;
 
     nueva.tipo = tipo;
     nueva.nombre = nombre.c_str();
@@ -73,7 +78,10 @@ void ActivityHandler::ReiniciarJornada(){
 }
 
 void ActivityHandler::FinalizarJornada(){
-    time(&actividades.at(actividades.size()-1).fecha_fin);
+    if(actividades.size() > 0)
+    {
+        time(&actividades.at(actividades.size()-1).fecha_fin);
+    }
 }
 
 string ActivityHandler::mostrarTiempoTotal(){

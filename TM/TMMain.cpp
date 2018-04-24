@@ -187,7 +187,7 @@ void TMFrame::OnMenuAboutSelected(wxCommandEvent& event)
 
 void TMFrame::OnBotonStopClick(wxCommandEvent& event)
 {
-    //PlaySound(TEXT("sounds\\stop.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    PlaySound(TEXT("sounds\\stop.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 
     ah->FinalizarJornada();
     BotonTrabajo->Disable();
@@ -202,7 +202,7 @@ void TMFrame::OnBotonVisorClick(wxCommandEvent& event)
     VJ = new VisualizarJornada(this);
     VJ->Show();
 
-    //PlaySound(TEXT("sounds\\visor.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    PlaySound(TEXT("sounds\\visor.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 
     if(ah->cantidad_actividades() == 0){
         wxMessageBox("Aun no hay actividades.");
@@ -232,7 +232,7 @@ void TMFrame::OnBotonTrabajoClick(wxCommandEvent& event)
     BotonDescanso->Enable();
     BotonProcastinacion->Enable();
     //sndPlaySound(TEXT("sounds\\wine_glass.wav"),0);
-    //PlaySound(TEXT("sounds\\trabajo.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    PlaySound(TEXT("sounds\\trabajo.wav"), NULL ,SND_ASYNC | SND_FILENAME);
     StatusBar1->SetStatusText("Actual - Trabajo",1);
 }
 
@@ -244,7 +244,7 @@ void TMFrame::OnBotonProcastinacionClick(wxCommandEvent& event)
     BotonDescanso->Enable();
     BotonProcastinacion->Disable();
     StatusBar1->SetStatusText("Actual - Procrastinar",1);
-    //PlaySound(TEXT("sounds\\procastinar.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    PlaySound(TEXT("sounds\\procastinar.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 }
 
 void TMFrame::OnBotonDescansoClick1(wxCommandEvent& event)
@@ -255,7 +255,7 @@ void TMFrame::OnBotonDescansoClick1(wxCommandEvent& event)
     BotonDescanso->Disable();
     BotonProcastinacion->Enable();
     StatusBar1->SetStatusText("Actual - Descanso",1);
-    //PlaySound(TEXT("sounds\\descanso.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    PlaySound(TEXT("sounds\\descanso.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 }
 
 void TMFrame::OnMenuNuevaJornadaSelected(wxCommandEvent& event)
@@ -265,7 +265,7 @@ void TMFrame::OnMenuNuevaJornadaSelected(wxCommandEvent& event)
     BotonDescanso->Enable();
     BotonProcastinacion->Enable();
     StatusBar1->SetStatusText("Actual - Nueva Jornada",1);
-    //PlaySound(TEXT("sounds\\nueva_jornada.wav"), NULL ,SND_ASYNC | SND_FILENAME);
+    PlaySound(TEXT("sounds\\nueva_jornada.wav"), NULL ,SND_ASYNC | SND_FILENAME);
 }
 
 void TMFrame::OnMenuExportarCSVSelected(wxCommandEvent& event)
